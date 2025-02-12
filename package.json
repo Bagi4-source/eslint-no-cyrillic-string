@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-no-cyrillic-string",
-  "version": "1.0.5",
+  "name": "eslint-plugin-no-cyrillic",
+  "version": "1.0.6",
   "description": "Disable cyrillic text in string literals",
   "main": "index.js",
   "directories": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eprincev-egor/no-cyrillic-string.git"
+    "url": "git+https://github.com/Bagi4-source/eslint-no-cyrillic-string"
   },
   "keywords": [
     "plugin",
@@ -24,7 +24,7 @@
     "cyrillic",
     "error"
   ],
-  "author": "Eprincev Egor",
+  "author": "Bagdasaryan German",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^5.9.0",

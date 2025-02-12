@@ -27,6 +27,18 @@ Then, you can add the custom rules to the `.eslint.json` file:
   }
 ```
 
+```json
+  "rules": {
+    "no-cyrillic-string/no-cyrillic-string": [
+      "error",
+      {
+        "comments": true,
+        "allow": ["NOTE", "\"[\\w\\W]+\""]
+      }
+    ]
+  }
+```
+
 To lint your project with ESLint, add the following `script` to your `package.json`:
 
 ```json

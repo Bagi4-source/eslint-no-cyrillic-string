@@ -16,7 +16,7 @@ let RuleTester = require("eslint").RuleTester;
 // Tests
 //------------------------------------------------------------------------------
 
-let ruleTester = new RuleTester();
+let ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
 let cyrillicAlphabet = "йцукенгшщзхъфывапролджэячсмитьбюёЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮЁ".split("");
 
 const errorText = "Strings must be without cyrillic text";
@@ -136,6 +136,20 @@ ruleTester.run("no-cyrillic-string", rule, {
                 message: errorText,
                 type: "Literal"
             }]
+        },
+        {
+            code: 'const message = "Привет, мир!";',
+            errors: [{ message: "Strings must be without cyrillic text" }]
+        },
+        {
+            code: '// Привет, мир!',
+            options: [{ comments: true }],
+            errors: [{ message: "Comments must be without cyrillic text" }]
+        },
+        {
+            code: '<div>Привет, мир!</div>',
+            parserOptions: { ecmaFeatures: { jsx: true } },
+            errors: [{ message: "Strings must be without cyrillic text" }]
         }
     ]
     // just all alphabet
@@ -150,6 +164,19 @@ ruleTester.run("no-cyrillic-string", rule, {
             parserOptions: {
                 ecmaVersion: 6
             }
+        },
+        {
+            code: 'const message = "Hello, world!";',
+            options: [{ allow: ['\"[\w\W]+\"'] }]
+        },
+        {
+            code: '// NOTE: This is a comment',
+            options: [{ comments: true, allow: ['NOTE'] }]
+        },
+        {
+            code: '<div>Hello, world!</div>',
+            parserOptions: { ecmaFeatures: { jsx: true } },
+            options: [{ allow: ['\>[\w\W]+\<'] }]
         }
     ]
 });
