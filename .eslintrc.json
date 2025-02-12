@@ -30,7 +30,7 @@
         "Promise": true
     },
     "plugins": [
-        "eslint-plugin-no-cyrillic-string",
+        "eslint-plugin-no-cyrillic-symbols",
         "react"
     ]
 }

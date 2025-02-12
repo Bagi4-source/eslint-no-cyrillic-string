@@ -6,7 +6,7 @@ For stop it, use it rule for detect hardcoded cyrillic text
 ## Installation
 
 ```sh
-$ npm install eslint eslint-plugin-no-cyrillic-string --save-dev
+$ npm install eslint eslint-plugin-no-cyrillic-symbols --save-dev
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ Create an `.eslint.json` file with the following:
 
 ```json
   "plugins": [
-      "eslint-plugin-no-cyrillic-string"
+      "eslint-plugin-no-cyrillic-symbols"
   ]
 ```
 
