@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-cyrillic-symbols",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Disable cyrillic text in string literals",
   "main": "index.js",
   "directories": {
