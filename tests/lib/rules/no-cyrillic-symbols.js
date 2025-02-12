@@ -8,7 +8,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-let rule = require("../../../lib/rules/no-cyrillic-string");
+let rule = require("../../../lib/rules/no-cyrillic-symbols");
 let RuleTester = require("eslint").RuleTester;
 
 
@@ -29,7 +29,7 @@ let cyrillicAlphabetTests = cyrillicAlphabet.map(symbol => ({
     }]
 }));
 
-ruleTester.run("no-cyrillic-string", rule, {
+ruleTester.run("no-cyrillic-symbols", rule, {
 
     invalid: [
         {
@@ -84,7 +84,7 @@ ruleTester.run("no-cyrillic-string", rule, {
                 type: "TemplateElement"
             }]
         },
-        // https://github.com/eprincev-egor/no-cyrillic-string/issues/1
+        // https://github.com/eprincev-egor/no-cyrillic-symbols/issues/1
         {
             code: "<div>русский текст</div>",
             parserOptions: {

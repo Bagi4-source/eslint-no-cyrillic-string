@@ -1,4 +1,4 @@
-# Disable cyrillic string literals (no-cyrillic-string)
+# Disable cyrillic string literals (no-cyrillic-symbols)
 
 If you develop multi language system, you constantly forget using lang dictionaries.  
 For stop it, use it rule for detect hardcoded cyrillic text

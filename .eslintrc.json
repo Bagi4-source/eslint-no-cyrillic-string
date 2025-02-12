@@ -14,7 +14,7 @@
         "space-infix-ops": ["error"],
         "no-lonely-if": ["error"],
         "curly": [2, "multi-line"],
-        "no-cyrillic-string/no-cyrillic-string": "error"
+        "no-cyrillic-symbols/no-cyrillic-symbols": "error"
     },
     "parserOptions": {
         "ecmaVersion": 8,

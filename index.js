@@ -5,5 +5,5 @@
  */
 
 module.exports.rules = {
-    "no-cyrillic-string": require("./lib/rules/no-cyrillic-string")
+    "no-cyrillic-symbols": require("./lib/rules/no-cyrillic-symbols")
 };

@@ -1,4 +1,4 @@
-# Disable cyrillic string literals (no-cyrillic-string)
+# Disable cyrillic string literals (no-cyrillic-symbols)
 
 If you develop multi language system, you constantly forget using lang dictionaries.  
 For stop it, use it rule for detect hardcoded cyrillic text
@@ -23,13 +23,13 @@ Then, you can add the custom rules to the `.eslint.json` file:
 
 ```json
   "rules": {
-      "no-cyrillic-string/no-cyrillic-string": "error"
+      "no-cyrillic-symbols/no-cyrillic-symbols": "error"
   }
 ```
 
 ```json
   "rules": {
-    "no-cyrillic-string/no-cyrillic-string": [
+    "no-cyrillic-symbols/no-cyrillic-symbols": [
       "error",
       {
         "comments": true,
