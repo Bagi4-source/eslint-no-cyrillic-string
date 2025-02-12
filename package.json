@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-no-cyrillic",
+  "name": "eslint-plugin-no-cyrillic-symbols",
   "version": "1.0.6",
   "description": "Disable cyrillic text in string literals",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bagi4-source/eslint-no-cyrillic-string"
+    "url": "git+https://github.com/Bagi4-source/eslint-no-cyrillic-string.git"
   },
   "keywords": [
     "plugin",
